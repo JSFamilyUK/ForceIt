@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+var tableOfNotes = [String]()
+
+class ViewController: UIViewController, UITableViewDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

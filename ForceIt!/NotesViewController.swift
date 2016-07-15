@@ -8,7 +8,10 @@
 
 import UIKit
 
-class NotesViewController: UIViewController, UITableViewDelegate {
+class NotesViewController: UIViewController {
+    
+    
+    @IBOutlet weak var notesTable: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +24,28 @@ class NotesViewController: UIViewController, UITableViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        // count the rows int the global array var tableOfNotes
+        return tableOfNotes.count
+        
     }
-    */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+        
+        // add the values of the array to the table
+        cell.textLabel?.text = tableOfNotes[indexPath.row]
+        
+        return cell
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        notesTable.reloadData()
+        
+    }
 
 }

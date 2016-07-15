@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="44" id="2LZ-Lu-1lR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ForceIt!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKN-Uv-1av">
@@ -122,15 +122,41 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AQU-0L-ghi">
+                                <rect key="frame" x="16" y="92" width="288" height="456"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="v7X-7W-TDc">
+                                        <rect key="frame" x="0.0" y="28" width="288" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v7X-7W-TDc" id="FwF-J0-8G6">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fUK-YX-E3V" id="IqU-xd-88a"/>
+                                    <outlet property="delegate" destination="fUK-YX-E3V" id="nv2-M2-NgC"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="KBT-pJ-fWc" secondAttribute="trailing" constant="-20" id="MTr-aq-BkC"/>
+                            <constraint firstItem="AQU-0L-ghi" firstAttribute="centerX" secondItem="lFe-rS-W5c" secondAttribute="centerX" id="OUB-fW-iH8"/>
                             <constraint firstItem="KBT-pJ-fWc" firstAttribute="leading" secondItem="lFe-rS-W5c" secondAttribute="leadingMargin" constant="-20" id="X4t-FI-Rrn"/>
+                            <constraint firstItem="AQU-0L-ghi" firstAttribute="leading" secondItem="lFe-rS-W5c" secondAttribute="leadingMargin" id="cof-xw-ep5"/>
+                            <constraint firstItem="5Xb-lg-CaH" firstAttribute="top" secondItem="AQU-0L-ghi" secondAttribute="bottom" constant="20" id="i83-XM-Zeb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQU-0L-ghi" secondAttribute="trailing" id="jfa-P7-RWR"/>
                             <constraint firstItem="KBT-pJ-fWc" firstAttribute="top" secondItem="Rks-eH-SvO" secondAttribute="bottom" constant="8" id="l7N-EH-WNW"/>
+                            <constraint firstItem="AQU-0L-ghi" firstAttribute="top" secondItem="KBT-pJ-fWc" secondAttribute="bottom" constant="20" id="zS3-6s-UNF"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="notes" destination="AQU-0L-ghi" id="gfd-VY-DtG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dS1-CC-Nb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,7 +165,7 @@
         <!--AddNotes-->
         <scene sceneID="0Y0-EI-HtL">
             <objects>
-                <viewController id="IsR-26-GCj" userLabel="AddNotes" sceneMemberID="viewController">
+                <viewController id="IsR-26-GCj" userLabel="AddNotes" customClass="AddNoteViewController" customModule="ForceIt_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ixp-zv-3Cr"/>
                         <viewControllerLayoutGuide type="bottom" id="Nhj-HT-IFM"/>
@@ -165,16 +191,43 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eol-IA-8nQ">
+                                <rect key="frame" x="26" y="92" width="268" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YH3-NF-h9y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taP-Fb-6Ni">
+                                <rect key="frame" x="127.5" y="130" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mek-xh-g0r"/>
+                                </constraints>
+                                <state key="normal" title="Add Note"/>
+                                <connections>
+                                    <action selector="saveNewNote:" destination="IsR-26-GCj" eventType="touchUpInside" id="qHm-s3-dj5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="taP-Fb-6Ni" firstAttribute="centerX" secondItem="7Xf-mW-EMz" secondAttribute="centerX" id="1vL-9T-oqW"/>
                             <constraint firstItem="Pu0-Xs-mO1" firstAttribute="top" secondItem="Ixp-zv-3Cr" secondAttribute="bottom" constant="8" id="2sP-g3-PIe"/>
+                            <constraint firstItem="eol-IA-8nQ" firstAttribute="centerX" secondItem="7Xf-mW-EMz" secondAttribute="centerX" id="8JO-fw-4GE"/>
+                            <constraint firstItem="eol-IA-8nQ" firstAttribute="leading" secondItem="7Xf-mW-EMz" secondAttribute="leadingMargin" constant="10" id="O5G-ZU-LpP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eol-IA-8nQ" secondAttribute="trailing" constant="10" id="SvU-D1-RiW"/>
+                            <constraint firstItem="eol-IA-8nQ" firstAttribute="top" secondItem="Pu0-Xs-mO1" secondAttribute="bottom" constant="20" id="b9X-Lj-Una"/>
                             <constraint firstItem="Pu0-Xs-mO1" firstAttribute="leading" secondItem="7Xf-mW-EMz" secondAttribute="leadingMargin" constant="-20" id="eWu-4G-yx4"/>
                             <constraint firstItem="Pu0-Xs-mO1" firstAttribute="centerX" secondItem="7Xf-mW-EMz" secondAttribute="centerX" id="rYf-HX-BkI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pu0-Xs-mO1" secondAttribute="trailing" constant="-20" id="y0D-eB-Y5p"/>
+                            <constraint firstItem="taP-Fb-6Ni" firstAttribute="top" secondItem="eol-IA-8nQ" secondAttribute="bottom" constant="8" id="ygR-yx-tns"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="newNote" destination="eol-IA-8nQ" id="Q2q-MB-E3T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UiT-Aq-G6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,6 +238,6 @@
         <image name="ForceIt_Icon.png" width="1038" height="1039"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zyl-Ge-gph"/>
+        <segue reference="X6h-g0-Vjp"/>
     </inferredMetricsTieBreakers>
 </document>
