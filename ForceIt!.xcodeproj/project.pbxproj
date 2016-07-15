@@ -12,6 +12,8 @@
 		AA5035C31D397C190087A8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5035C11D397C190087A8A3 /* Main.storyboard */; };
 		AA5035C51D397C190087A8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5035C41D397C190087A8A3 /* Assets.xcassets */; };
 		AA5035C81D397C190087A8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5035C61D397C190087A8A3 /* LaunchScreen.storyboard */; };
+		AA5035D01D3983070087A8A3 /* ForceIt_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */; };
+		AA5035D21D398A960087A8A3 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5035D11D398A960087A8A3 /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AA5035C41D397C190087A8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5035C71D397C190087A8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA5035C91D397C190087A8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForceIt_Icon.png; sourceTree = "<group>"; };
+		AA5035D11D398A960087A8A3 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				AA5035BD1D397C190087A8A3 /* AppDelegate.swift */,
 				AA5035BF1D397C190087A8A3 /* ViewController.swift */,
 				AA5035C11D397C190087A8A3 /* Main.storyboard */,
+				AA5035D11D398A960087A8A3 /* NotesViewController.swift */,
+				AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */,
 				AA5035C41D397C190087A8A3 /* Assets.xcassets */,
 				AA5035C61D397C190087A8A3 /* LaunchScreen.storyboard */,
 				AA5035C91D397C190087A8A3 /* Info.plist */,
@@ -125,6 +131,7 @@
 				AA5035C81D397C190087A8A3 /* LaunchScreen.storyboard in Resources */,
 				AA5035C51D397C190087A8A3 /* Assets.xcassets in Resources */,
 				AA5035C31D397C190087A8A3 /* Main.storyboard in Resources */,
+				AA5035D01D3983070087A8A3 /* ForceIt_Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			files = (
 				AA5035C01D397C190087A8A3 /* ViewController.swift in Sources */,
 				AA5035BE1D397C190087A8A3 /* AppDelegate.swift in Sources */,
+				AA5035D21D398A960087A8A3 /* NotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
