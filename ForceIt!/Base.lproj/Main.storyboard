@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="136"/>
+            <point key="canvasLocation" x="79" y="136"/>
         </scene>
         <!--Notes-->
         <scene sceneID="oZf-gS-Y1k">
@@ -155,7 +155,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="notes" destination="AQU-0L-ghi" id="gfd-VY-DtG"/>
+                        <outlet property="notesTable" destination="AQU-0L-ghi" id="MkA-aK-ZBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dS1-CC-Nb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
