@@ -187,7 +187,7 @@
         <!--Directory-->
         <scene sceneID="IW9-Iu-3gA">
             <objects>
-                <viewController id="GaO-eH-2Qr" userLabel="Directory" sceneMemberID="viewController">
+                <viewController id="GaO-eH-2Qr" userLabel="Directory" customClass="DirectoryViewController" customModule="ForceIt_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FI8-TS-98C"/>
                         <viewControllerLayoutGuide type="bottom" id="XeG-ir-K7I"/>
@@ -196,25 +196,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oO-ke-JIr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force Directories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oO-ke-JIr">
                                 <rect key="frame" x="-4" y="28" width="328" height="44"/>
                                 <color key="backgroundColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="zFu-vb-C4c"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xB-tG-SS3">
+                                <rect key="frame" x="0.0" y="103" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="GaO-eH-2Qr" id="9w0-iK-fTb"/>
+                                    <outlet property="delegate" destination="GaO-eH-2Qr" id="b1h-rS-RsL"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Force to view their info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0D-Ra-zBw">
+                                <rect key="frame" x="16" y="82" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="evS-oN-Yd6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySL-NQ-Hlc">
+                                <rect key="frame" x="16" y="319" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PFt-xs-pFD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="h0D-Ra-zBw" firstAttribute="leading" secondItem="Xb6-O2-E2v" secondAttribute="leadingMargin" id="7fG-1A-QFR"/>
+                            <constraint firstItem="ySL-NQ-Hlc" firstAttribute="leading" secondItem="Xb6-O2-E2v" secondAttribute="leadingMargin" id="DKL-Nh-4Xw"/>
+                            <constraint firstItem="h0D-Ra-zBw" firstAttribute="centerX" secondItem="Xb6-O2-E2v" secondAttribute="centerX" id="ER0-04-giq"/>
+                            <constraint firstItem="4xB-tG-SS3" firstAttribute="centerX" secondItem="Xb6-O2-E2v" secondAttribute="centerX" id="G8u-mc-BeN"/>
                             <constraint firstItem="5oO-ke-JIr" firstAttribute="top" secondItem="FI8-TS-98C" secondAttribute="bottom" constant="8" id="RKw-eI-WLM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ySL-NQ-Hlc" secondAttribute="trailing" id="Rpo-jI-NAO"/>
                             <constraint firstItem="5oO-ke-JIr" firstAttribute="centerX" secondItem="Xb6-O2-E2v" secondAttribute="centerX" id="Shn-qY-Axq"/>
                             <constraint firstItem="5oO-ke-JIr" firstAttribute="leading" secondItem="Xb6-O2-E2v" secondAttribute="leadingMargin" constant="-20" id="Xjm-r8-muM"/>
+                            <constraint firstItem="ySL-NQ-Hlc" firstAttribute="centerX" secondItem="Xb6-O2-E2v" secondAttribute="centerX" id="Xtw-2B-8kc"/>
+                            <constraint firstItem="ySL-NQ-Hlc" firstAttribute="top" secondItem="h0D-Ra-zBw" secondAttribute="bottom" constant="10" id="Yb4-NY-4cx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5oO-ke-JIr" secondAttribute="trailing" constant="-20" id="chI-wq-HJL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h0D-Ra-zBw" secondAttribute="trailing" id="dkb-Ui-OL1"/>
+                            <constraint firstItem="4xB-tG-SS3" firstAttribute="top" secondItem="h0D-Ra-zBw" secondAttribute="bottom" id="g50-Bm-Sw6"/>
+                            <constraint firstItem="h0D-Ra-zBw" firstAttribute="top" secondItem="5oO-ke-JIr" secondAttribute="bottom" constant="10" id="o3X-vB-w7P"/>
+                            <constraint firstItem="ySL-NQ-Hlc" firstAttribute="top" secondItem="4xB-tG-SS3" secondAttribute="bottom" id="pvB-42-fNt"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Yb4-NY-4cx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="forcePicker" destination="4xB-tG-SS3" id="Hwi-K9-Ryg"/>
+                        <outlet property="forceSelectedFromPicker" destination="ySL-NQ-Hlc" id="D9N-oz-6kI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6IS-hc-WPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
