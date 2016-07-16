@@ -17,7 +17,7 @@ class NotesViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        tableOfNotes = NSUserDefaults.standardUserDefaults().objectForKey("forceItNotes") as! [String]
+        tableOfNotes = NSUserDefaults.standardUserDefaults().objectForKey("forceItNotes")! as! [String]
     
     }
 
@@ -46,7 +46,7 @@ class NotesViewController: UIViewController, UITableViewDelegate {
         
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+   func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
         if editingStyle == UITableViewCellEditingStyle.Delete {
             
