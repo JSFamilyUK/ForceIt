@@ -79,7 +79,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="Useful Numbers">
+                                <state key="normal" title="Map Display">
                                     <color key="titleColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -192,7 +192,7 @@
                                     <color key="textColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Useful Numbers" id="miJ-0V-vUn">
+                                    <navigationItem title="Map Display" id="miJ-0V-vUn">
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="fba-W5-Coy">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="qvD-mR-ipu"/>
@@ -574,6 +574,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="CLQ-Ex-48p"/>
-        <segue reference="zyl-Ge-gph"/>
+        <segue reference="X6h-g0-Vjp"/>
     </inferredMetricsTieBreakers>
 </document>
