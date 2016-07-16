@@ -47,45 +47,79 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0d-ra-eWb">
-                                <rect key="frame" x="60" y="332" width="200" height="30"/>
+                                <rect key="frame" x="60" y="332" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Q4c-32-f3p"/>
+                                    <constraint firstAttribute="height" constant="40" id="Q4c-32-f3p"/>
                                     <constraint firstAttribute="width" constant="200" id="csa-fy-DW1"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Notes">
                                     <color key="titleColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="fUK-YX-E3V" kind="presentation" modalTransitionStyle="crossDissolve" id="X6h-g0-Vjp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OH8-Cn-nhs">
-                                <rect key="frame" x="60" y="377" width="200" height="30"/>
+                                <rect key="frame" x="60" y="387" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DSL-S4-YtZ"/>
                                     <constraint firstAttribute="width" constant="200" id="Hp3-uW-OF6"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Yg9-Ae-tHA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Yg9-Ae-tHA"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Useful Numbers">
                                     <color key="titleColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DSL-S4-YtZ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="7DF-kb-YrQ" kind="presentation" modalTransitionStyle="crossDissolve" id="hVd-ab-akk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud3-3t-Hhe">
-                                <rect key="frame" x="60" y="422" width="200" height="30"/>
+                                <rect key="frame" x="60" y="442" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Fbz-pz-3oo"/>
+                                    <constraint firstAttribute="height" constant="40" id="Fbz-pz-3oo"/>
                                     <constraint firstAttribute="width" constant="200" id="wl5-H4-3JM"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="xx9-QO-Uqn"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Force Directories">
                                     <color key="titleColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xx9-QO-Uqn"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="GaO-eH-2Qr" kind="presentation" modalTransitionStyle="crossDissolve" id="7Ur-Jl-KQu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -112,6 +146,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="79" y="136"/>
+        </scene>
+        <!--Useful Numbers-->
+        <scene sceneID="5l0-fy-RXM">
+            <objects>
+                <viewController id="7DF-kb-YrQ" userLabel="Useful Numbers" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WGa-iO-ZNn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hz0-fd-slq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="asw-5j-hDN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdx-6H-2UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="905"/>
+        </scene>
+        <!--Directory-->
+        <scene sceneID="IW9-Iu-3gA">
+            <objects>
+                <viewController id="GaO-eH-2Qr" userLabel="Directory" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FI8-TS-98C"/>
+                        <viewControllerLayoutGuide type="bottom" id="XeG-ir-K7I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xb6-O2-E2v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6IS-hc-WPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="905"/>
         </scene>
         <!--Notes-->
         <scene sceneID="oZf-gS-Y1k">
@@ -222,7 +294,7 @@
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eol-IA-8nQ">
-                                <rect key="frame" x="26" y="92" width="268" height="30"/>
+                                <rect key="frame" x="26" y="122" width="268" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="YH3-NF-h9y"/>
                                 </constraints>
@@ -230,10 +302,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taP-Fb-6Ni">
-                                <rect key="frame" x="127.5" y="130" width="65" height="30"/>
+                                <rect key="frame" x="117.5" y="172" width="85" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mek-xh-g0r"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add Note"/>
                                 <connections>
                                     <action selector="saveNewNote:" destination="IsR-26-GCj" eventType="touchUpInside" id="qHm-s3-dj5"/>
@@ -247,11 +320,11 @@
                             <constraint firstItem="eol-IA-8nQ" firstAttribute="centerX" secondItem="7Xf-mW-EMz" secondAttribute="centerX" id="8JO-fw-4GE"/>
                             <constraint firstItem="eol-IA-8nQ" firstAttribute="leading" secondItem="7Xf-mW-EMz" secondAttribute="leadingMargin" constant="10" id="O5G-ZU-LpP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eol-IA-8nQ" secondAttribute="trailing" constant="10" id="SvU-D1-RiW"/>
-                            <constraint firstItem="eol-IA-8nQ" firstAttribute="top" secondItem="Pu0-Xs-mO1" secondAttribute="bottom" constant="20" id="b9X-Lj-Una"/>
+                            <constraint firstItem="eol-IA-8nQ" firstAttribute="top" secondItem="Pu0-Xs-mO1" secondAttribute="bottom" constant="50" id="b9X-Lj-Una"/>
                             <constraint firstItem="Pu0-Xs-mO1" firstAttribute="leading" secondItem="7Xf-mW-EMz" secondAttribute="leadingMargin" constant="-20" id="eWu-4G-yx4"/>
                             <constraint firstItem="Pu0-Xs-mO1" firstAttribute="centerX" secondItem="7Xf-mW-EMz" secondAttribute="centerX" id="rYf-HX-BkI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pu0-Xs-mO1" secondAttribute="trailing" constant="-20" id="y0D-eB-Y5p"/>
-                            <constraint firstItem="taP-Fb-6Ni" firstAttribute="top" secondItem="eol-IA-8nQ" secondAttribute="bottom" constant="8" id="ygR-yx-tns"/>
+                            <constraint firstItem="taP-Fb-6Ni" firstAttribute="top" secondItem="eol-IA-8nQ" secondAttribute="bottom" constant="20" id="ygR-yx-tns"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

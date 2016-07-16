@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ForceIt!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFC-VB-FAo">
-                                <rect key="frame" x="58.5" y="109" width="203" height="85"/>
+                                <rect key="frame" x="58" y="109" width="203" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="FnA-kn-MuW"/>
                                 </constraints>
@@ -52,8 +52,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="All the info you never had when you needed it..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rC9-YX-j1K">
-                                <rect key="frame" x="12" y="354" width="296" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All the info you never had when you needed it..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rC9-YX-j1K">
+                                <rect key="frame" x="30" y="354" width="260.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bbh-JG-pF5"/>
                                 </constraints>
