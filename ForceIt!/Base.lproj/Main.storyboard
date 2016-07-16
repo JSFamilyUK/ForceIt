@@ -36,6 +36,8 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="70"/>
                                 <color key="textColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="0.40052816899999999" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="3"/>
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="ForceIt_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Tl-Rc-kNg">
                                 <rect key="frame" x="110" y="182" width="100" height="100"/>
@@ -53,10 +55,10 @@
                                     <constraint firstAttribute="height" constant="40" id="Q4c-32-f3p"/>
                                     <constraint firstAttribute="width" constant="200" id="csa-fy-DW1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
                                 <state key="normal" title="Notes">
                                     <color key="titleColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -75,10 +77,10 @@
                                     <constraint firstAttribute="width" constant="200" id="Hp3-uW-OF6"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Yg9-Ae-tHA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
                                 <state key="normal" title="Useful Numbers">
                                     <color key="titleColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -102,10 +104,10 @@
                                     <constraint firstAttribute="width" constant="200" id="wl5-H4-3JM"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="xx9-QO-Uqn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Force Directories">
                                     <color key="titleColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -158,7 +160,23 @@
                     <view key="view" contentMode="scaleToFill" id="asw-5j-hDN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yby-ma-8UV">
+                                <rect key="frame" x="-4" y="28" width="328" height="44"/>
+                                <color key="backgroundColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hS7-bb-pUd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yby-ma-8UV" firstAttribute="leading" secondItem="asw-5j-hDN" secondAttribute="leadingMargin" constant="-20" id="0oe-mo-BxH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yby-ma-8UV" secondAttribute="trailing" constant="-20" id="hST-Qf-4qi"/>
+                            <constraint firstItem="yby-ma-8UV" firstAttribute="top" secondItem="WGa-iO-ZNn" secondAttribute="bottom" constant="8" id="kQZ-MD-3he"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>

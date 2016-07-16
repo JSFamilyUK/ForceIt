@@ -298,6 +298,7 @@
 				AA5035CE1D397C190087A8A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
