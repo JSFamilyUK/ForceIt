@@ -195,7 +195,24 @@
                     <view key="view" contentMode="scaleToFill" id="Xb6-O2-E2v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oO-ke-JIr">
+                                <rect key="frame" x="-4" y="28" width="328" height="44"/>
+                                <color key="backgroundColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zFu-vb-C4c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5oO-ke-JIr" firstAttribute="top" secondItem="FI8-TS-98C" secondAttribute="bottom" constant="8" id="RKw-eI-WLM"/>
+                            <constraint firstItem="5oO-ke-JIr" firstAttribute="centerX" secondItem="Xb6-O2-E2v" secondAttribute="centerX" id="Shn-qY-Axq"/>
+                            <constraint firstItem="5oO-ke-JIr" firstAttribute="leading" secondItem="Xb6-O2-E2v" secondAttribute="leadingMargin" constant="-20" id="Xjm-r8-muM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5oO-ke-JIr" secondAttribute="trailing" constant="-20" id="chI-wq-HJL"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -300,6 +317,10 @@
                                     <constraint firstAttribute="height" constant="44" id="xth-R7-yCG"/>
                                 </constraints>
                                 <color key="barTintColor" red="0.87406724690000004" green="0.93259304759999995" blue="0.24993866679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" red="0.219443202" green="0.46304792169999998" blue="0.75494974849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Add New Note" id="1t5-Y9-G4Z">
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="kAx-Xy-HbN">
@@ -359,6 +380,6 @@
         <image name="ForceIt_Icon.png" width="1038" height="1039"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X6h-g0-Vjp"/>
+        <segue reference="zyl-Ge-gph"/>
     </inferredMetricsTieBreakers>
 </document>

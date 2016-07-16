@@ -18,10 +18,10 @@ class AddNoteViewController: UIViewController {
         
         newNote.text = ""
         
+        NSUserDefaults.standardUserDefaults().setObject(tableOfNotes, forKey: "forceItNotes")
+        
     }
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

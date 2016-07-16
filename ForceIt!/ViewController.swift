@@ -10,7 +10,7 @@ import UIKit
 
 var tableOfNotes = [String]()
 
-class ViewController: UIViewController, UITableViewDelegate{
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
