@@ -8,8 +8,6 @@
 
 import UIKit
 
-var tableOfNotes = [String]()
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

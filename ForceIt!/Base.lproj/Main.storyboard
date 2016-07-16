@@ -201,22 +201,15 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s1c-yi-rFp">
-                                <rect key="frame" x="16" y="74" width="288" height="484"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.92742568250000001" green="0.94429421420000004" blue="0.97207051519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="s1c-yi-rFp" firstAttribute="top" secondItem="q5p-9A-4LZ" secondAttribute="bottom" constant="10" id="6Vc-vD-Hqb"/>
                             <constraint firstItem="vMT-WP-R1E" firstAttribute="leading" secondItem="asw-5j-hDN" secondAttribute="leadingMargin" constant="-20" id="7Kj-86-shz"/>
                             <constraint firstItem="vMT-WP-R1E" firstAttribute="top" secondItem="asw-5j-hDN" secondAttribute="topMargin" id="7dy-4W-Yxd"/>
-                            <constraint firstItem="Hz0-fd-slq" firstAttribute="top" secondItem="s1c-yi-rFp" secondAttribute="bottom" constant="10" id="8Pb-KW-Lbc"/>
-                            <constraint firstItem="s1c-yi-rFp" firstAttribute="leading" secondItem="asw-5j-hDN" secondAttribute="leadingMargin" id="EU0-Gp-xKN"/>
                             <constraint firstItem="q5p-9A-4LZ" firstAttribute="leading" secondItem="asw-5j-hDN" secondAttribute="leadingMargin" constant="-20" id="IBn-tc-jU8"/>
                             <constraint firstItem="vMT-WP-R1E" firstAttribute="leading" secondItem="asw-5j-hDN" secondAttribute="leadingMargin" constant="-20" id="KtQ-St-qlq"/>
                             <constraint firstItem="q5p-9A-4LZ" firstAttribute="top" secondItem="WGa-iO-ZNn" secondAttribute="bottom" id="Umj-Mq-tiU"/>
                             <constraint firstItem="vMT-WP-R1E" firstAttribute="top" secondItem="asw-5j-hDN" secondAttribute="topMargin" id="dUI-JD-FoY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="s1c-yi-rFp" secondAttribute="trailing" id="eAN-78-ccZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vMT-WP-R1E" secondAttribute="trailing" constant="-20" id="hHV-yu-Awh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q5p-9A-4LZ" secondAttribute="trailing" constant="-20" id="l3E-Qc-N0O"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q5p-9A-4LZ" secondAttribute="trailing" constant="-20" id="mwa-k1-6GJ"/>
@@ -573,7 +566,7 @@
         <image name="ForceIt_Icon.png" width="1038" height="1039"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CLQ-Ex-48p"/>
+        <segue reference="qvD-mR-ipu"/>
         <segue reference="X6h-g0-Vjp"/>
     </inferredMetricsTieBreakers>
 </document>

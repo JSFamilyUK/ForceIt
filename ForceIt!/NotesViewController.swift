@@ -8,6 +8,8 @@
 
 import UIKit
 
+var tableOfNotes = [String]()
+
 class NotesViewController: UIViewController, UITableViewDelegate {
     
     
@@ -17,8 +19,12 @@ class NotesViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        tableOfNotes = NSUserDefaults.standardUserDefaults().objectForKey("forceItNotes")! as! [String]
+        if NSUserDefaults.standardUserDefaults().objectForKey("forceItNotes") != nil {
+        
+            tableOfNotes = NSUserDefaults.standardUserDefaults().objectForKey("forceItNotes") as! [String]
     
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
