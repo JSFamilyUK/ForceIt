@@ -16,6 +16,12 @@
 		AA5035D21D398A960087A8A3 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5035D11D398A960087A8A3 /* NotesViewController.swift */; };
 		AA5035D41D39900F0087A8A3 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5035D31D39900F0087A8A3 /* AddNoteViewController.swift */; };
 		AAF394621D3A64D000828C80 /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF394611D3A64D000828C80 /* DirectoryViewController.swift */; };
+		AAF394871D3D70C600828C80 /* Hospitals.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF394851D3D70C600828C80 /* Hospitals.png */; };
+		AAF394881D3D70C600828C80 /* Local Auth.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF394861D3D70C600828C80 /* Local Auth.png */; };
+		AAF3948A1D3D71D300828C80 /* 999.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF394891D3D71D300828C80 /* 999.png */; };
+		AAF3948E1D3D7E5900828C80 /* fireAmbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3948D1D3D7E5900828C80 /* fireAmbViewController.swift */; };
+		AAF394901D3D7E8400828C80 /* hospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3948F1D3D7E8400828C80 /* hospitalViewController.swift */; };
+		AAF394921D3D7EB400828C80 /* localAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF394911D3D7EB400828C80 /* localAuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		AA5035D11D398A960087A8A3 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		AA5035D31D39900F0087A8A3 /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		AAF394611D3A64D000828C80 /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
+		AAF394851D3D70C600828C80 /* Hospitals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hospitals.png; path = "ForceIt!/Hospitals.png"; sourceTree = "<group>"; };
+		AAF394861D3D70C600828C80 /* Local Auth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Local Auth.png"; path = "ForceIt!/Local Auth.png"; sourceTree = "<group>"; };
+		AAF394891D3D71D300828C80 /* 999.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 999.png; path = "ForceIt!/999.png"; sourceTree = "<group>"; };
+		AAF3948D1D3D7E5900828C80 /* fireAmbViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fireAmbViewController.swift; sourceTree = "<group>"; };
+		AAF3948F1D3D7E8400828C80 /* hospitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hospitalViewController.swift; sourceTree = "<group>"; };
+		AAF394911D3D7EB400828C80 /* localAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = localAuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +58,9 @@
 		AA5035B11D397C180087A8A3 = {
 			isa = PBXGroup;
 			children = (
+				AAF394891D3D71D300828C80 /* 999.png */,
+				AAF394851D3D70C600828C80 /* Hospitals.png */,
+				AAF394861D3D70C600828C80 /* Local Auth.png */,
 				AA5035BC1D397C190087A8A3 /* ForceIt! */,
 				AA5035BB1D397C190087A8A3 /* Products */,
 			);
@@ -67,6 +82,9 @@
 				AA5035D11D398A960087A8A3 /* NotesViewController.swift */,
 				AA5035D31D39900F0087A8A3 /* AddNoteViewController.swift */,
 				AAF394611D3A64D000828C80 /* DirectoryViewController.swift */,
+				AAF3948D1D3D7E5900828C80 /* fireAmbViewController.swift */,
+				AAF3948F1D3D7E8400828C80 /* hospitalViewController.swift */,
+				AAF394911D3D7EB400828C80 /* localAuthViewController.swift */,
 				AA5035C11D397C190087A8A3 /* Main.storyboard */,
 				AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */,
 				AA5035C41D397C190087A8A3 /* Assets.xcassets */,
@@ -135,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5035C81D397C190087A8A3 /* LaunchScreen.storyboard in Resources */,
+				AAF394871D3D70C600828C80 /* Hospitals.png in Resources */,
 				AA5035C51D397C190087A8A3 /* Assets.xcassets in Resources */,
+				AAF394881D3D70C600828C80 /* Local Auth.png in Resources */,
 				AA5035C31D397C190087A8A3 /* Main.storyboard in Resources */,
+				AAF3948A1D3D71D300828C80 /* 999.png in Resources */,
 				AA5035D01D3983070087A8A3 /* ForceIt_Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,9 +171,12 @@
 			files = (
 				AA5035D41D39900F0087A8A3 /* AddNoteViewController.swift in Sources */,
 				AA5035C01D397C190087A8A3 /* ViewController.swift in Sources */,
+				AAF394901D3D7E8400828C80 /* hospitalViewController.swift in Sources */,
 				AA5035BE1D397C190087A8A3 /* AppDelegate.swift in Sources */,
+				AAF394921D3D7EB400828C80 /* localAuthViewController.swift in Sources */,
 				AAF394621D3A64D000828C80 /* DirectoryViewController.swift in Sources */,
 				AA5035D21D398A960087A8A3 /* NotesViewController.swift in Sources */,
+				AAF3948E1D3D7E5900828C80 /* fireAmbViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
