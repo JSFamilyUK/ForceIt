@@ -17,6 +17,7 @@ class DirectoryViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     //@IBOutlet weak var forceSelectedFromPicker: UILabel!
     @IBOutlet weak var selectedIssiLabel: UILabel!
     @IBOutlet weak var selectedPhoneTextView: UITextView!
+    @IBOutlet weak var selectedWebsiteTextView: UITextView!
 
 
     
@@ -59,7 +60,9 @@ class DirectoryViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         self.selectedPhoneTextView.contentInset = UIEdgeInsetsMake(0,0,0,0)
         self.selectedPhoneTextView.text = (phoneData[Int(forcePickerData.indexOf(forcePickerData[row])!)])
         
-    
+      
+        self.selectedWebsiteTextView.text = (websiteData[Int(forcePickerData.indexOf(forcePickerData[row])!)])
+        
     }
     
     //Returning the force data from an array based on the force selected
@@ -73,7 +76,10 @@ class DirectoryViewController: UIViewController, UIPickerViewDelegate, UIPickerV
      let issiData = ["", "001", "002", "003", "004", "005", "006", "Civil Nuclear", "Cleveland", "Cumbria", "Derbyshire", "Devon & Cornwall", "Dorset", "Durham", "Dyfed Powys", "Essex", "Gloucestershire", "Greater Manchester", "Gwent", "Hampshire", "Hertfordshire", "Humberside", "Kent", "Lancashire", "Leicestershire", "Lincolnshire", "Merseyside", "Metropolitan Police", "MOD", "Norfolk", "North Yorkshire", "Northamptonshire", "Northumbria", "North Wales", "Nottinghamshire", "PSNI", "Police Scotland", "South Wales", "South Yorkshire", "Staffordshire", "Suffolk", "Surrey", "Sussex", "Thames Valley", "Warwickshire", "West Mercia", "West Midlands", "West Yorkshire", "Wiltshire"]
     
     // Array containing the geographic numbers for each force
-    let phoneData = ["", "01275 818340", "01234 841212", "0800 405040", "01480 456111", "01244 350000", "020 7601 2222", "Civil Nuclear", "01642 326326", "0300 1240111", "0345 1233333", "01392 420320", "01202 222222", "0345 6060365", "01267 222020", "01245 491491", "01452 726920", "0161 872 5050", "01633 838111", "01962 841534", "01707 354000", "01482 597600", "01622 690690", "01772 614444", "0116 222 2222", "01522 532222", "0151 709 6010", "020 7230 1212", "MOD", "01953 424242", "01904 618691", "03000 111 222", "01661 872555", "0300 330 0101", "0115 967 0999", "028 9065 0222", "01786 289070", "01656 655555", "0114 2196905", "0300 123 4455", "01473 613500", "01483 571212", "01273 475432", "01865 841148", "01926 415000", "0300 333 3000", "0345 113 5000", "01924 375 222", "01380 826 614"]
+    let phoneData = ["", "01275 818340", "01234 841212", "0800 405040", "01480 456111", "01244 350000", "020 7601 2222", "01946 773999", "01642 326326", "0300 1240111", "0345 1233333", "01392 420320", "01202 222222", "0345 6060365", "01267 222020", "01245 491491", "01452 726920", "0161 872 5050", "01633 838111", "01962 841534", "01707 354000", "01482 597600", "01622 690690", "01772 614444", "0116 222 2222", "01522 532222", "0151 709 6010", "020 7230 1212", "No National Number", "01953 424242", "01904 618691", "03000 111 222", "01661 872555", "0300 330 0101", "0115 967 0999", "028 9065 0222", "01786 289070", "01656 655555", "0114 2196905", "0300 123 4455", "01473 613500", "01483 571212", "01273 475432", "01865 841148", "01926 415000", "0300 333 3000", "0345 113 5000", "01924 375 222", "01380 826 614"]
+    
+    // Array containing the geographic numbers for each force
+    let websiteData = ["", "http://www.avonandsomerset.police.uk/", "http://www.bedfordshire.police.uk/", "http://www.btp.police.uk/", "http://www.cambs.police.uk/", "https://www.police.uk/cheshire/", "https://www.police.uk/city-of-london/", "https://www.gov.uk/government/organisations/civil-nuclear-constabulary", "https://www.police.uk/cleveland/", "https://www.police.uk/cumbria/", "https://www.police.uk/derbyshire/", "https://www.police.uk/devon-and-cornwall/", "https://www.police.uk/dorset/", "https://www.police.uk/durham/", "https://www.police.uk/dyfed-powys/", "https://www.police.uk/essex/", "https://www.police.uk/gloucestershire/", "https://www.police.uk/greater-manchester/", "https://www.police.uk/gwent/", "https://www.police.uk/hampshire/", "https://www.police.uk/hertfordshire/", "https://www.police.uk/humberside/", "https://www.police.uk/kent/", "https://www.police.uk/lancashire/", "https://www.police.uk/leicestershire/", "https://www.police.uk/lincolnshire/", "https://www.police.uk/merseyside/", "https://www.police.uk/metropolitan/", "http://www.mod.police.uk/", "https://www.police.uk/norfolk/", "https://www.police.uk/north-yorkshire/", "https://www.police.uk/northamptonshire/", "https://www.police.uk/northumbria/", "https://www.police.uk/north-wales/", "https://www.police.uk/nottinghamshire/", "https://www.police.uk/northern-ireland/", "http://www.scotland.police.uk/", "https://www.police.uk/south-wales/", "https://www.police.uk/south-yorkshire/", "https://www.police.uk/staffordshire/", "https://www.police.uk/suffolk/", "https://www.police.uk/surrey/", "https://www.police.uk/sussex/", "https://www.police.uk/thames-valley/", "https://www.police.uk/warwickshire/", "https://www.police.uk/west-mercia/", "https://www.police.uk/west-midlands/", "https://www.police.uk/west-yorkshire/", "https://www.police.uk/wiltshire/"]
 
     
     override func viewDidLoad() {
