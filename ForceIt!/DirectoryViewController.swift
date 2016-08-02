@@ -9,6 +9,7 @@
 import UIKit
 
 var forceSelectedForTabView = String()
+var forceSelectedPositionInArray = Int()
 
 class DirectoryViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -16,7 +17,6 @@ class DirectoryViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     // var selectedForce = Int()
     
     @IBOutlet weak var forcePicker: UIPickerView!
-    //@IBOutlet weak var forceSelectedFromPicker: UILabel!
     @IBOutlet weak var selectedIssiLabel: UILabel!
     @IBOutlet weak var selectedPhoneTextView: UITextView!
     @IBOutlet weak var selectedWebsiteTextView: UITextView!
@@ -49,30 +49,20 @@ class DirectoryViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     //function returning the selected row from the picker
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //self.forceSelectedFromPicker.text = "Here is the info for " + forcePickerData[row]
         
          forceSelectedForTabView = String(forcePickerData[row])
+        forceSelectedPositionInArray = forcePickerData.indexOf(forcePickerData[row])!
         
-        // Method for returning the value at the same index from other arrays as from the forcePickerData array
         
-        // Double line version using additional var
-        /*selectedForce = forcePickerData.indexOf(forcePickerData[row])!
-        self.selectedIssiLabel.text = (issiData[Int(selectedForce)])*/
+        self.selectedIssiLabel.text = issiData[Int(forcePickerData.indexOf(forcePickerData[row])!)]
         
-        // Single line version removing the need for the additional variable
-        self.selectedIssiLabel.text = (issiData[Int(forcePickerData.indexOf(forcePickerData[row])!)])
-        
-        self.selectedPhoneTextView.contentInset = UIEdgeInsetsMake(0,0,0,0)
-        self.selectedPhoneTextView.text = (phoneData[Int(forcePickerData.indexOf(forcePickerData[row])!)])
+
+        self.selectedPhoneTextView.text = phoneData[Int(forcePickerData.indexOf(forcePickerData[row])!)]
         
       
-        self.selectedWebsiteTextView.text = (websiteData[Int(forcePickerData.indexOf(forcePickerData[row])!)])
+        self.selectedWebsiteTextView.text = websiteData[Int(forcePickerData.indexOf(forcePickerData[row])!)]
         
     }
-    
-    //Returning the force data from an array based on the force selected
-    
-    
     
     // Array containing the list of available forces
     let forcePickerData = ["", "Avon and Somerset", "Bedfordshire", "BTP", "Cambridgeshire", "Cheshire", "City of London", "Civil Nuclear", "Cleveland", "Cumbria", "Derbyshire", "Devon and Cornwall", "Dorset", "Durham", "Dyfed Powys", "Essex", "Gloucestershire", "Greater Manchester", "Gwent", "Hampshire", "Hertfordshire", "Humberside", "Kent", "Lancashire", "Leicestershire", "Lincolnshire", "Merseyside", "Metropolitan Police", "MOD", "Norfolk", "North Yorkshire", "Northamptonshire", "Northumbria", "North Wales", "Nottinghamshire", "PSNI", "Police Scotland", "South Wales", "South Yorkshire", "Staffordshire", "Suffolk", "Surrey", "Sussex", "Thames Valley", "Warwickshire", "West Mercia", "West Midlands", "West Yorkshire", "Wiltshire"]
